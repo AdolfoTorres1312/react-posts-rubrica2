@@ -1,0 +1,51 @@
+/* ====== MEDULA — estilos globales ====== */
+:root {
+  --medula-primary: #1560ff;   /* azul MEDULA */
+  --medula-primary-2: #29a5ff; /* celeste MEDULA */
+  --medula-dark: #0f172a;      /* slate-900 */
+  --medula-muted: #6b7280;     /* gray-500 */
+}
+
+html, body {
+  font-family: "Fira Sans", system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  color: var(--medula-dark);
+  background: #ffffff;
+}
+
+/* Navbar en gradiente MEDULA (si usas navbar-dark bg-dark) */
+.navbar-dark.bg-dark {
+  background-image: linear-gradient(90deg, var(--medula-primary), var(--medula-primary-2));
+  border: none;
+}
+
+/* Hero */
+.hero {
+  background:
+    radial-gradient(1200px 500px at 0% 0%, rgba(41,165,255,.15), transparent 60%),
+    linear-gradient(180deg, rgba(21,96,255,.08), transparent 40%);
+  border-bottom: 1px solid rgba(21,96,255,.15);
+}
+
+.hero .badge {
+  background: rgba(21,96,255,.12);
+  color: var(--medula-dark);
+  border: 1px solid rgba(21,96,255,.25);
+}
+
+/* Cards */
+.card {
+  border: 1px solid rgba(21,96,255,.15);
+  transition: transform .08s ease, box-shadow .08s ease;
+}
+
+.card:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 16px rgba(0,0,0,.06);
+}
+
+.card-title {
+  color: var(--medula-dark);
+  font-weight: 700;
+}
+
+.text-muted { color: var(--medula-muted)!important; }
